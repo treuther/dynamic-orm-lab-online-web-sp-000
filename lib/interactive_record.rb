@@ -22,6 +22,8 @@ class InteractiveRecord
     column_names.compact
   end
   
+  #creates an new instance of a student
+  #creates a new student with attributes
   def initialize(options={})
     options.each do |property, value|
       self.send("#{property}=", value)
