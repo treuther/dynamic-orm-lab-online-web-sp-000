@@ -30,6 +30,7 @@ class InteractiveRecord
     end
   end
   
+  #return the table name when called on an instance of Student
   def table_name_for_insert
     self.class.table_name
   end
