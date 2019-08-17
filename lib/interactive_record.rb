@@ -35,6 +35,8 @@ class InteractiveRecord
     self.class.table_name
   end
   
+  #return the column names when called on an instance of Student
+  #does not include an id column
   def col_names_for_insert
     self.class.column_names.delete_if {|col| col == "id"}.join(", ")
   end
